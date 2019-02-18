@@ -1,0 +1,190 @@
+fileFormatVersion: 2
+guid: e32112e9270b2064295ecf0cfde44fcf
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: beam1
+    100002: beam2
+    100004: beam3
+    100006: beam4
+    100008: ceiling1
+    100010: //RootNode
+    100012: panel1
+    100014: panel2
+    100016: panel3
+    100018: panel4
+    100020: plank1
+    100022: plank2
+    100024: plank3
+    100026: plank4
+    100028: plank5
+    100030: plank6
+    100032: plank7
+    100034: plank8
+    400000: beam1
+    400002: beam2
+    400004: beam3
+    400006: beam4
+    400008: ceiling1
+    400010: //RootNode
+    400012: panel1
+    400014: panel2
+    400016: panel3
+    400018: panel4
+    400020: plank1
+    400022: plank2
+    400024: plank3
+    400026: plank4
+    400028: plank5
+    400030: plank6
+    400032: plank7
+    400034: plank8
+    2100000: planks_mat
+    2100002: ceiling_mat
+    2100004: panels_mat
+    2300000: beam1
+    2300002: beam2
+    2300004: beam3
+    2300006: beam4
+    2300008: ceiling1
+    2300010: panel1
+    2300012: panel2
+    2300014: panel3
+    2300016: panel4
+    2300018: plank1
+    2300020: plank2
+    2300022: plank3
+    2300024: plank4
+    2300026: plank5
+    2300028: plank6
+    2300030: plank7
+    2300032: plank8
+    3300000: beam1
+    3300002: beam2
+    3300004: beam3
+    3300006: beam4
+    3300008: ceiling1
+    3300010: panel1
+    3300012: panel2
+    3300014: panel3
+    3300016: panel4
+    3300018: plank1
+    3300020: plank2
+    3300022: plank3
+    3300024: plank4
+    3300026: plank5
+    3300028: plank6
+    3300030: plank7
+    3300032: plank8
+    4300000: beam4
+    4300002: ceiling1
+    4300004: beam2
+    4300006: beam3
+    4300008: plank1
+    4300010: plank2
+    4300012: plank4
+    4300014: plank8
+    4300016: plank7
+    4300018: plank6
+    4300020: plank3
+    4300022: plank5
+    4300024: beam1
+    4300026: panel1
+    4300028: panel2
+    4300030: panel3
+    4300032: panel4
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ceiling_mat
+    second: {fileID: 2100000, guid: b507a3e0b41e78d41affbc441a9eae4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: panels_mat
+    second: {fileID: 2100000, guid: 9376b149da56ae34198ee41a401882b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: planks_mat
+    second: {fileID: 2100000, guid: dd80afce730e46344bffb7e2ee832513, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

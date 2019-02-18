@@ -1,0 +1,595 @@
+fileFormatVersion: 2
+guid: b3702bd8c6d301449bc1f8e30440ee4a
+timeCreated: 1488261347
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bed_Room_01
+    100004: Bed_Room_02
+    100006: Cage1
+    100008: Ceiling_Bed_Room_01
+    100010: Ceiling_Bed_Room_02
+    100012: Ceiling_Kitchen_01
+    100014: Ceiling_Living_Room_01
+    100016: Ceiling_Restroom_01
+    100018: Ceiling_Storage_Room_01
+    100020: Door
+    100022: Door1
+    100024: Door_Frame1
+    100026: Door_Frame1 1
+    100028: Door_Frame2
+    100030: Door_Frame3
+    100032: Door_Frame4
+    100034: Door_Frame5
+    100036: Door_Frame6
+    100038: Door_Knob1
+    100040: Door_Knob2
+    100042: Door_Window1
+    100044: Door_Window1 1
+    100046: Door_Window1 2
+    100048: Door_Window1 3
+    100050: Door_Window1 4
+    100052: Entrance_01
+    100054: Floor_Bed_Room_01
+    100056: Floor_Bed_Room_02
+    100058: Floor_Entrance_01
+    100060: Floor_Kitchen_01
+    100062: Floor_Living_Room_01
+    100064: Floor_Restroom_01
+    100066: Floor_Storage_Room_01
+    100068: Frame_Window1
+    100070: Frame_Window1 1
+    100072: Frame_Window1 2
+    100074: Frame_Window1 3
+    100076: Frame_Window1 4
+    100078: Glass1
+    100080: Glass1 1
+    100082: Glass1 2
+    100084: Glass1 3
+    100086: Glass1 4
+    100088: Glass1 5
+    100090: Handle1
+    100092: Handle1 1
+    100094: Handle2
+    100096: Handle2 1
+    100098: Hinge1
+    100100: Kitchen_01
+    100102: Living_Door1
+    100104: Living_Room_01
+    100106: Restroom_01
+    100108: Storage_Room_01
+    100110: Wall_Bed_Room_01
+    100112: Wall_Bed_Room_02
+    100114: Wall_Entrance_01
+    100116: Wall_Entrance_02
+    100118: Wall_Kitchen_01
+    100120: Wall_Living_Room_01
+    100122: Wall_Restroom_01
+    100124: Wall_Storage_Room_01
+    100126: Window
+    100128: Window1
+    100130: Window2
+    100132: Window3
+    100134: Window4
+    100136: Window5
+    100138: wall_panel1
+    100140: divider1
+    100142: divider2
+    100144: divider3
+    100146: divider4
+    100148: divider5
+    100150: divider6
+    100152: Divider_01
+    100154: ceiling1
+    100156: door1
+    100158: door1 1
+    100160: door1 2
+    100162: door1 3
+    100164: door1 4
+    100166: door1 5
+    100168: Door_Frame7
+    100170: Door_Frame7 1
+    100172: Door_Frame7 2
+    100174: Door_Frame7 3
+    100176: Door_Frame7 4
+    100178: Door_Frame7 5
+    100180: entrance_door1
+    100182: entrance_door2
+    100184: entrance_door3
+    100186: entrance_door4
+    100188: entrance_door5
+    100190: entrance_door6
+    100192: floor1
+    100194: glass1
+    100196: glass1 1
+    100198: glass1 2
+    100200: glass1 3
+    100202: glass1 4
+    100204: glass1 5
+    100206: Hallway_01
+    100208: wall1
+    100210: divider7
+    100212: Dividers
+    100214: Door_Frames
+    100216: Windows
+    100218: cage1
+    400000: //RootNode
+    400002: Bed_Room_01
+    400004: Bed_Room_02
+    400006: Cage1
+    400008: Ceiling_Bed_Room_01
+    400010: Ceiling_Bed_Room_02
+    400012: Ceiling_Kitchen_01
+    400014: Ceiling_Living_Room_01
+    400016: Ceiling_Restroom_01
+    400018: Ceiling_Storage_Room_01
+    400020: Door
+    400022: Door1
+    400024: Door_Frame1
+    400026: Door_Frame1 1
+    400028: Door_Frame2
+    400030: Door_Frame3
+    400032: Door_Frame4
+    400034: Door_Frame5
+    400036: Door_Frame6
+    400038: Door_Knob1
+    400040: Door_Knob2
+    400042: Door_Window1
+    400044: Door_Window1 1
+    400046: Door_Window1 2
+    400048: Door_Window1 3
+    400050: Door_Window1 4
+    400052: Entrance_01
+    400054: Floor_Bed_Room_01
+    400056: Floor_Bed_Room_02
+    400058: Floor_Entrance_01
+    400060: Floor_Kitchen_01
+    400062: Floor_Living_Room_01
+    400064: Floor_Restroom_01
+    400066: Floor_Storage_Room_01
+    400068: Frame_Window1
+    400070: Frame_Window1 1
+    400072: Frame_Window1 2
+    400074: Frame_Window1 3
+    400076: Frame_Window1 4
+    400078: Glass1
+    400080: Glass1 1
+    400082: Glass1 2
+    400084: Glass1 3
+    400086: Glass1 4
+    400088: Glass1 5
+    400090: Handle1
+    400092: Handle1 1
+    400094: Handle2
+    400096: Handle2 1
+    400098: Hinge1
+    400100: Kitchen_01
+    400102: Living_Door1
+    400104: Living_Room_01
+    400106: Restroom_01
+    400108: Storage_Room_01
+    400110: Wall_Bed_Room_01
+    400112: Wall_Bed_Room_02
+    400114: Wall_Entrance_01
+    400116: Wall_Entrance_02
+    400118: Wall_Kitchen_01
+    400120: Wall_Living_Room_01
+    400122: Wall_Restroom_01
+    400124: Wall_Storage_Room_01
+    400126: Window
+    400128: Window1
+    400130: Window2
+    400132: Window3
+    400134: Window4
+    400136: Window5
+    400138: wall_panel1
+    400140: divider1
+    400142: divider2
+    400144: divider3
+    400146: divider4
+    400148: divider5
+    400150: divider6
+    400152: Divider_01
+    400154: ceiling1
+    400156: door1
+    400158: door1 1
+    400160: door1 2
+    400162: door1 3
+    400164: door1 4
+    400166: door1 5
+    400168: Door_Frame7
+    400170: Door_Frame7 1
+    400172: Door_Frame7 2
+    400174: Door_Frame7 3
+    400176: Door_Frame7 4
+    400178: Door_Frame7 5
+    400180: entrance_door1
+    400182: entrance_door2
+    400184: entrance_door3
+    400186: entrance_door4
+    400188: entrance_door5
+    400190: entrance_door6
+    400192: floor1
+    400194: glass1
+    400196: glass1 1
+    400198: glass1 2
+    400200: glass1 3
+    400202: glass1 4
+    400204: glass1 5
+    400206: Hallway_01
+    400208: wall1
+    400210: divider7
+    400212: Dividers
+    400214: Door_Frames
+    400216: Windows
+    400218: cage1
+    2300000: Cage1
+    2300002: Ceiling_Bed_Room_01
+    2300004: Ceiling_Bed_Room_02
+    2300006: Ceiling_Kitchen_01
+    2300008: Ceiling_Living_Room_01
+    2300010: Ceiling_Restroom_01
+    2300012: Ceiling_Storage_Room_01
+    2300014: Door1
+    2300016: Door_Frame1 1
+    2300018: Door_Frame2
+    2300020: Door_Frame3
+    2300022: Door_Frame4
+    2300024: Door_Frame5
+    2300026: Door_Frame6
+    2300028: Door_Window1
+    2300030: Door_Window1 1
+    2300032: Door_Window1 2
+    2300034: Door_Window1 3
+    2300036: Door_Window1 4
+    2300038: Floor_Bed_Room_01
+    2300040: Floor_Bed_Room_02
+    2300042: Floor_Entrance_01
+    2300044: Floor_Kitchen_01
+    2300046: Floor_Living_Room_01
+    2300048: Floor_Restroom_01
+    2300050: Floor_Storage_Room_01
+    2300052: Frame_Window1
+    2300054: Frame_Window1 1
+    2300056: Frame_Window1 2
+    2300058: Frame_Window1 3
+    2300060: Frame_Window1 4
+    2300062: Glass1
+    2300064: Glass1 1
+    2300066: Glass1 2
+    2300068: Glass1 3
+    2300070: Glass1 4
+    2300072: Glass1 5
+    2300074: Handle1
+    2300076: Handle1 1
+    2300078: Handle2
+    2300080: Handle2 1
+    2300082: Hinge1
+    2300084: Wall_Bed_Room_01
+    2300086: Wall_Bed_Room_02
+    2300088: Wall_Entrance_01
+    2300090: Wall_Entrance_02
+    2300092: Wall_Kitchen_01
+    2300094: Wall_Living_Room_01
+    2300096: Wall_Restroom_01
+    2300098: Wall_Storage_Room_01
+    2300100: wall_panel1
+    2300102: divider1
+    2300104: divider2
+    2300106: divider3
+    2300108: divider4
+    2300110: divider5
+    2300112: divider6
+    2300114: ceiling1
+    2300116: door1
+    2300118: door1 1
+    2300120: door1 2
+    2300122: door1 3
+    2300124: door1 4
+    2300126: door1 5
+    2300128: Door_Frame7
+    2300130: Door_Frame7 1
+    2300132: Door_Frame7 2
+    2300134: Door_Frame7 3
+    2300136: Door_Frame7 4
+    2300138: Door_Frame7 5
+    2300140: floor1
+    2300142: glass1
+    2300144: glass1 1
+    2300146: glass1 2
+    2300148: glass1 3
+    2300150: glass1 4
+    2300152: glass1 5
+    2300154: wall1
+    2300156: divider7
+    2300158: Door_Frame1
+    2300160: cage1
+    3300000: Cage1
+    3300002: Ceiling_Bed_Room_01
+    3300004: Ceiling_Bed_Room_02
+    3300006: Ceiling_Kitchen_01
+    3300008: Ceiling_Living_Room_01
+    3300010: Ceiling_Restroom_01
+    3300012: Ceiling_Storage_Room_01
+    3300014: Door1
+    3300016: Door_Frame1 1
+    3300018: Door_Frame2
+    3300020: Door_Frame3
+    3300022: Door_Frame4
+    3300024: Door_Frame5
+    3300026: Door_Frame6
+    3300028: Door_Window1
+    3300030: Door_Window1 1
+    3300032: Door_Window1 2
+    3300034: Door_Window1 3
+    3300036: Door_Window1 4
+    3300038: Floor_Bed_Room_01
+    3300040: Floor_Bed_Room_02
+    3300042: Floor_Entrance_01
+    3300044: Floor_Kitchen_01
+    3300046: Floor_Living_Room_01
+    3300048: Floor_Restroom_01
+    3300050: Floor_Storage_Room_01
+    3300052: Frame_Window1
+    3300054: Frame_Window1 1
+    3300056: Frame_Window1 2
+    3300058: Frame_Window1 3
+    3300060: Frame_Window1 4
+    3300062: Glass1
+    3300064: Glass1 1
+    3300066: Glass1 2
+    3300068: Glass1 3
+    3300070: Glass1 4
+    3300072: Glass1 5
+    3300074: Handle1
+    3300076: Handle1 1
+    3300078: Handle2
+    3300080: Handle2 1
+    3300082: Hinge1
+    3300084: Wall_Bed_Room_01
+    3300086: Wall_Bed_Room_02
+    3300088: Wall_Entrance_01
+    3300090: Wall_Entrance_02
+    3300092: Wall_Kitchen_01
+    3300094: Wall_Living_Room_01
+    3300096: Wall_Restroom_01
+    3300098: Wall_Storage_Room_01
+    3300100: wall_panel1
+    3300102: divider1
+    3300104: divider2
+    3300106: divider3
+    3300108: divider4
+    3300110: divider5
+    3300112: divider6
+    3300114: ceiling1
+    3300116: door1
+    3300118: door1 1
+    3300120: door1 2
+    3300122: door1 3
+    3300124: door1 4
+    3300126: door1 5
+    3300128: Door_Frame7
+    3300130: Door_Frame7 1
+    3300132: Door_Frame7 2
+    3300134: Door_Frame7 3
+    3300136: Door_Frame7 4
+    3300138: Door_Frame7 5
+    3300140: floor1
+    3300142: glass1
+    3300144: glass1 1
+    3300146: glass1 2
+    3300148: glass1 3
+    3300150: glass1 4
+    3300152: glass1 5
+    3300154: wall1
+    3300156: divider7
+    3300158: Door_Frame1
+    3300160: cage1
+    4300000: Glass1
+    4300002: Door_Window1
+    4300004: Frame_Window1
+    4300006: Glass1
+    4300008: Door_Window1
+    4300010: Frame_Window1
+    4300012: Glass1
+    4300014: Door_Window1
+    4300016: Frame_Window1
+    4300018: Glass1
+    4300020: Door_Window1
+    4300022: Frame_Window1
+    4300024: Glass1
+    4300026: Door_Window1
+    4300028: Frame_Window1
+    4300030: Glass1
+    4300032: Hinge1
+    4300034: Door1
+    4300036: Handle1
+    4300038: Handle2
+    4300040: Handle1
+    4300042: Handle2
+    4300044: Door_Frame1
+    4300046: Door_Frame2
+    4300048: Door_Frame3
+    4300050: Door_Frame4
+    4300052: Door_Frame5
+    4300054: Door_Frame6
+    4300056: Ceiling_Bed_Room_02
+    4300058: Wall_Bed_Room_02
+    4300060: Floor_Bed_Room_02
+    4300062: Floor_Kitchen_01
+    4300064: Ceiling_Kitchen_01
+    4300066: Wall_Kitchen_01
+    4300068: Floor_Restroom_01
+    4300070: Ceiling_Restroom_01
+    4300072: Wall_Restroom_01
+    4300074: Wall_Entrance_01
+    4300076: Floor_Entrance_01
+    4300078: Wall_Entrance_02
+    4300080: Floor_Storage_Room_01
+    4300082: Ceiling_Storage_Room_01
+    4300084: Wall_Storage_Room_01
+    4300086: Ceiling_Bed_Room_01
+    4300088: Wall_Bed_Room_01
+    4300090: Floor_Bed_Room_01
+    4300092: Floor_Living_Room_01
+    4300094: Wall_Living_Room_01
+    4300096: Ceiling_Living_Room_01
+    4300098: Cage1
+    4300100: wall_panel1
+    4300102: divider1
+    4300104: divider2
+    4300106: divider3
+    4300108: divider4
+    4300110: divider5
+    4300112: divider6
+    4300114: door1
+    4300116: glass1
+    4300118: Door_Frame7
+    4300120: door1
+    4300122: glass1
+    4300124: Door_Frame7
+    4300126: door1
+    4300128: glass1
+    4300130: Door_Frame7
+    4300132: door1
+    4300134: glass1
+    4300136: Door_Frame7
+    4300138: door1
+    4300140: glass1
+    4300142: Door_Frame7
+    4300144: door1
+    4300146: glass1
+    4300148: Door_Frame7
+    4300150: wall1
+    4300152: ceiling1
+    4300154: floor1
+    4300156: divider7
+    4300158: cage1
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ceiling_Living_Room_01_mat
+    second: {fileID: 2100000, guid: aaea1b86a19320f4f90dbbe1c7bad77d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door_Frame_mat
+    second: {fileID: 2100000, guid: a24f833c81d1a4c43b60edad540a8e55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Doors_Window_mat
+    second: {fileID: 2100000, guid: a9ef8d3ac038da74980b5324ec95407c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor_Living_Room_01_mat
+    second: {fileID: 2100000, guid: 1b7af9220b18f3f49a21e274ee5f74a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Frame_Window_mat
+    second: {fileID: 2100000, guid: bedae3d2b19749c47845bbc02c61ca1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass_mat
+    second: {fileID: 2100000, guid: 95ecb80cda3141a4899ae8915aa7947c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall_Living_Room_01_mat
+    second: {fileID: 2100000, guid: 8430a06658301f24cb0be4bc5b8ffcdc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: divider_mat
+    second: {fileID: 2100000, guid: 999bf2686f6022748985ebc8e81dcc76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: e1efe8eaafd86e541b0c478a54a14ec8, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
