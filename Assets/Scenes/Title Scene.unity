@@ -311,7 +311,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 0.03
+  m_Intensity: 0
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -10058,8 +10058,9 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Hidden/postVHSPro_First
   m_Shader: {fileID: 4800000, guid: e5b137a48bf2c4c668927fd89b6ccbcd, type: 3}
-  m_ShaderKeywords: VHS_FISHEYE_ON VHS_JITTER_H_ON VHS_LINENOISE_ON VHS_SCANLINES_ON
-    VHS_STRETCH_ON VHS_TAPENOISE_ON VHS_YIQNOISE_ON
+  m_ShaderKeywords: VHS_FILMGRAIN_ON VHS_FISHEYE_ON VHS_JITTER_H_ON VHS_JITTER_V_ON
+    VHS_LINENOISE_ON VHS_LINESFLOAT_ON VHS_SCANLINES_ON VHS_STRETCH_ON VHS_TAPENOISE_ON
+    VHS_YIQNOISE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -10090,17 +10091,17 @@ PrefabInstance:
     - target: {fileID: 2342115969148259930, guid: 3d884a74b221d054098ddfaf9576cc2f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 477.40103
+      value: 477.38
       objectReference: {fileID: 0}
     - target: {fileID: 2342115969148259930, guid: 3d884a74b221d054098ddfaf9576cc2f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 184.152
+      value: 184.19
       objectReference: {fileID: 0}
     - target: {fileID: 2342115969148259930, guid: 3d884a74b221d054098ddfaf9576cc2f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 605.04297
+      value: 605.3
       objectReference: {fileID: 0}
     - target: {fileID: 2342115969148259930, guid: 3d884a74b221d054098ddfaf9576cc2f,
         type: 3}
@@ -10150,7 +10151,7 @@ PrefabInstance:
     - target: {fileID: 2342115969148259931, guid: 3d884a74b221d054098ddfaf9576cc2f,
         type: 3}
       propertyPath: speed
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d884a74b221d054098ddfaf9576cc2f, type: 3}
@@ -10232,7 +10233,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Hidden/postVHSPro_Second
   m_Shader: {fileID: 4800000, guid: e2075d3cd3deb45c78fdc81aab250ef7, type: 3}
-  m_ShaderKeywords: VHS_BLEED_ON VHS_FISHEYE_ON VHS_OLD_THREE_PHASE VHS_VIGNETTE_ON
+  m_ShaderKeywords: VHS_BLEED_ON VHS_FISHEYE_ON VHS_OLD_THREE_PHASE VHS_SIGNAL_TWEAK_ON
+    VHS_VIGNETTE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -10527,7 +10529,7 @@ MonoBehaviour:
   crtMode: 0
   crtLinesMode: 1
   screenLinesNum: 240
-  bleedAmount: 2.01
+  bleedAmount: 1.94
   bleedDebugOn: 0
   bleedCurveY:
     serializedVersion: 2
@@ -10614,26 +10616,26 @@ MonoBehaviour:
   cutoffFadeY: 0
   vignetteOn: 1
   vignetteAmount: 0.52
-  vignetteSpeed: 1
+  vignetteSpeed: 0
   noiseLinesMode: 1
   noiseLinesNum: 240
   noiseQuantizeX: 0
-  filmgrainOn: 0
+  filmgrainOn: 1
   filmGrainAmount: 0.0261
   signalNoiseOn: 1
   signalNoiseAmount: 0.289
   signalNoisePower: 0.855
   tapeNoiseOn: 1
-  tapeNoiseTH: 0.403
+  tapeNoiseTH: 0.536
   tapeNoiseAmount: 0.357
-  tapeNoiseSpeed: 0.193
+  tapeNoiseSpeed: 0.446
   lineNoiseOn: 1
   lineNoiseAmount: 1
   lineNoiseSpeed: 5
   scanLinesOn: 1
   scanLineWidth: 12.94
-  linesFloatOn: 0
-  linesFloatSpeed: -2.58
+  linesFloatOn: 1
+  linesFloatSpeed: -1.38
   stretchOn: 1
   twitchHOn: 0
   twitchHFreq: 0.35
@@ -10641,17 +10643,17 @@ MonoBehaviour:
   twitchVFreq: 0.08
   jitterHOn: 1
   jitterHAmount: 0.16
-  jitterVOn: 0
-  jitterVAmount: 0.43
+  jitterVOn: 1
+  jitterVAmount: 12.22
   jitterVSpeed: 0.58
-  signalTweakOn: 0
+  signalTweakOn: 1
   signalAdjustY: 0
   signalAdjustI: 0
   signalAdjustQ: 0
-  signalShiftY: 0.82
-  signalShiftI: 0
-  signalShiftQ: -0.62
-  gammaCorection: 0.875
+  signalShiftY: 0.96
+  signalShiftI: 1.22
+  signalShiftQ: 0.29
+  gammaCorection: 0.742
   feedbackOn: 1
   feedbackMode: 0
   feedbackThresh: 0.1
@@ -10759,7 +10761,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Hidden/postVHSPro_Tape
   m_Shader: {fileID: 4800000, guid: caea6b3daf52a4416949b7b9c0146d77, type: 3}
-  m_ShaderKeywords: VHS_LINENOISE_ON VHS_TAPENOISE_ON
+  m_ShaderKeywords: VHS_FILMGRAIN_ON VHS_LINENOISE_ON VHS_TAPENOISE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
