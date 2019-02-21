@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6201762390795525907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6201762390795525917}
+  - component: {fileID: 6201762390795525906}
+  m_Layer: 0
+  m_Name: Puddle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6201762390795525917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6201762390795525907}
+  m_LocalRotation: {x: -0, y: 0.33696422, z: -0, w: -0.94151753}
+  m_LocalPosition: {x: 1.01, y: 0.67, z: 1.6999999}
+  m_LocalScale: {x: 8, y: 8, z: 8}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 320.616, z: 0}
+--- !u!114 &6201762390795525906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6201762390795525907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff67f7da7db2fbf42b20a47f906fb2fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _settings:
+    _edgeFadeoff: 0.116
+    _enableJitter: 0
+    _faceSharpness: 0.41
+    _layerMode: 1
+    _layerProjection: 0
+    _mode: 0
+    _sampleJitter: 1.59
+    _saturation: 0.935
+    _shape: 1
+    _xLayer:
+      _channel2:
+        _inputRangeSoftness: 1
+        _inputRangeThreshold: 0.5
+        _mode: 0
+        _outputRange: {x: 0, y: 1}
+      _channel3:
+        _inputRangeSoftness: 1
+        _inputRangeThreshold: 0.5
+        _mode: 0
+        _outputRange: {x: 0, y: 1}
+      _channel4:
+        _inputRangeSoftness: 1
+        _inputRangeThreshold: 0.5
+        _mode: 0
+        _outputRange: {x: 0, y: 1}
+      _channel1:
+        _inputRangeSoftness: 1
+        _inputRangeThreshold: 0.5
+        _mode: 2
+        _outputRange: {x: 0, y: 1}
+      _layerMask: {fileID: 0}
+      _layerMaskOffset: {x: 0, y: 0}
+      _layerMaskScale: {x: 1, y: 1}
+      _editorSectionFoldout: 0
+    _yLayer:
+      _channel2:
+        _inputRangeSoftness: 0
+        _inputRangeThreshold: 0
+        _mode: 0
+        _outputRange: {x: 0, y: 1}
+      _channel3:
+        _inputRangeSoftness: 0.299
+        _inputRangeThreshold: 0.6
+        _mode: 0
+        _outputRange: {x: 0, y: 1}
+      _channel4:
+        _inputRangeSoftness: 0.026
+        _inputRangeThreshold: 0.668
+        _mode: 0
+        _outputRange: {x: 0, y: 1}
+      _channel1:
+        _inputRangeSoftness: 0.249
+        _inputRangeThreshold: 0.261
+        _mode: 2
+        _outputRange: {x: 0, y: 1}
+      _layerMask: {fileID: 2800000, guid: c0987e9b290dc644a9ebf09a2bd848bc, type: 3}
+      _layerMaskOffset: {x: 0.07, y: 0.11}
+      _layerMaskScale: {x: 1, y: 1}
+      _editorSectionFoldout: 0
+    _zLayer:
+      _channel2:
+        _inputRangeSoftness: 1
+        _inputRangeThreshold: 0.5
+        _mode: 0
+        _outputRange: {x: 0, y: 1}
+      _channel3:
+        _inputRangeSoftness: 1
+        _inputRangeThreshold: 0.5
+        _mode: 0
+        _outputRange: {x: 0, y: 1}
+      _channel4:
+        _inputRangeSoftness: 1
+        _inputRangeThreshold: 0.5
+        _mode: 0
+        _outputRange: {x: 0, y: 1}
+      _channel1:
+        _inputRangeSoftness: 1
+        _inputRangeThreshold: 0.5
+        _mode: 2
+        _outputRange: {x: 0, y: 1}
+      _layerMask: {fileID: 0}
+      _layerMaskOffset: {x: 0, y: 0}
+      _layerMaskScale: {x: 1, y: 1}
+      _editorSectionFoldout: 0

@@ -1,0 +1,48 @@
+# Release Notes
+
+## v2.0.0 (2019-02-14)
+
+**Breaking:**
+- Breaking changes to wetness source API used for weather integrations. Please update Wet Stuff for Enviro when installing this update.
+
+**Features:**
+- New 'UniStorm' integration via the free 'Wet Stuff for UniStorm' asset available for free on the Asset Store.
+
+**Fixes:**
+- Fixed incorrect specular buffer on OpenGL.
+
+## v1.2.0 (2019-01-24)
+
+**Features:**
+
+- Added normal smoothing for high saturation decals to reduce high frequency specular aliasing.
+- Added support for Single-Pass Stereo for VR.
+
+## v1.1.0 (2018-12-10)
+
+**Features:**
+
+- Added DripLine, RainPuddle and AutoRainPuddle components for more dynamic scenes that react to raining weather.
+- New 'Enviro - Sky and Weather' integration via the free 'Wet Stuff for Enviro' asset available for free on the Asset Store.
+
+**Fixes:**
+
+- Fixed copy+paste not working for WetDecal layer settings.
+- Fixed wet particle splatter not spawning enough splatters when recycling them.
+- Removed references to UnityEditor in some components in player code.
+
+## v1.0.2 (2018-09-24)
+
+**Fixed:**
+ * Fixed RenderSettings failing to load when accessed through the inspector
+ * Fixed DebugSettings failing to load when accessed through the inspector
+ * Fixed flickering of decals on MacOS (#8)
+
+## v1.0.1 (2018-08-01)
+
+**Fixes:**
+* Fixed serialized fields incorrectly marked as readonly.
+
+## v1.0.0 (2018-07-30)
+
+Initial Release
