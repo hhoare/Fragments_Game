@@ -179,7 +179,8 @@ public class HFPS_GameManager : MonoBehaviour {
             colorGrading.basic.saturation = 1;
         }
 
-        HintText.gameObject.SetActive(false);
+        if (HintText != null) 
+            HintText.gameObject.SetActive(false);
     }
 
     void Update()
