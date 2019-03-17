@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonManager : MonoBehaviour
+public class UIButtonController : MonoBehaviour
 {
+
+    public GameObject gameObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +16,11 @@ public class ButtonManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void PlayGame()
+    {
+        gameObject.SetActive(false);
+
     }
 }
