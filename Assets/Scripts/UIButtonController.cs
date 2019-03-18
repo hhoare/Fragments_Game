@@ -6,6 +6,9 @@ public class UIButtonController : MonoBehaviour
 {
 
     public GameObject gameObject;
+
+    public GameObject rain;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +24,7 @@ public class UIButtonController : MonoBehaviour
     public void PlayGame()
     {
         gameObject.SetActive(false);
+        rain.SetActive(true);
 
     }
 }
