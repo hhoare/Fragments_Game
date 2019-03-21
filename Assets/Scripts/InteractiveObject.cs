@@ -12,7 +12,7 @@ public class InteractiveObject : MonoBehaviour, IInteractive
 
     public string DisplayText => displayText;
 
-    private AudioSource audioSource;
+    protected AudioSource audioSource;
 
     protected virtual void Awake()
     {

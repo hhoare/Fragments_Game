@@ -36,7 +36,7 @@ public class Door : InteractiveObject
         base.InteractWith();
 
         animator.SetBool(shouldOpenAnimParamater, true);
-            displayText = string.Empty;
+        displayText = string.Empty;
         isOpen = true;
         }
 
