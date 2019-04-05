@@ -4,27 +4,38 @@ using UnityEngine;
 
 public class UIButtonController : MonoBehaviour
 {
+    [SerializeField]
+    GameObject blueScreen;
+    [SerializeField]
+    GameObject rain;
 
-    public GameObject gameObject;
+    [SerializeField]
+    GameObject mainPage;
+    [SerializeField]
+    GameObject creditsPage;
 
-    public GameObject rain;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void PlayGame()
     {
-        gameObject.SetActive(false);
+        blueScreen.SetActive(false);
         rain.SetActive(true);
 
+    }
+
+    public void Credits()
+    {
+        mainPage.SetActive(false);
+        creditsPage.SetActive(true);
+    }
+
+    public void Return()
+    {
+        creditsPage.SetActive(false);
+        mainPage.SetActive(true);
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
     }
 }
