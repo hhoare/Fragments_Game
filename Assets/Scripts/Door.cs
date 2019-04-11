@@ -12,6 +12,12 @@ public class Door : InteractiveObject
     private bool isOpen = false;
 
     private int shouldOpenAnimParamater = Animator.StringToHash("shouldOpen");
+    private int shouldCloseAnimParamater = Animator.StringToHash("shouldClose");
+
+    [SerializeField]
+    private AudioClip openSound;
+    [SerializeField]
+    private AudioClip closeSound;
 
     /// <summary>
     /// Using a constructor to initialize the Display Text in the editor.
@@ -19,7 +25,19 @@ public class Door : InteractiveObject
     /// 
     public Door()
     {
-        displayText = nameof(Door);
+        displayText = "Open " + nameof(Door);
+    }
+
+    private void Update()
+    {
+        if (!isOpen)
+        {
+            displayText = "Open " + nameof(Door);
+        }
+        if (isOpen)
+        {
+            displayText = "Close " + nameof(Door);
+        }
     }
 
     protected override void Awake()
@@ -32,12 +50,23 @@ public class Door : InteractiveObject
     {
         if (!isOpen)
         {
+            audioSource.clip = openSound;
+            base.InteractWith();
 
-        base.InteractWith();
+            animator.SetBool(shouldOpenAnimParamater, true);
+            animator.SetBool(shouldCloseAnimParamater, false);
+            //displayText = string.Empty;
+            isOpen = true;
+        }
 
-        animator.SetBool(shouldOpenAnimParamater, true);
-        displayText = string.Empty;
-        isOpen = true;
+        else if (isOpen)
+        {
+            audioSource.clip = closeSound;
+            base.InteractWith();
+            animator.SetBool(shouldOpenAnimParamater, false);
+            animator.SetBool(shouldCloseAnimParamater, true);
+            //displayText = string.Empty;
+            isOpen = false;
         }
 
     }
