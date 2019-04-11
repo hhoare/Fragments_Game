@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,10 +18,41 @@ public class DetectLookedAtInteractive : MonoBehaviour
     [Tooltip("How far from the raycastOrigin we will search for interactive objects")]
     [SerializeField]
     private float maxRange = 2.5f;
+    
+    /// <summary>
+    /// Event raised when player looks at a different IInteractive.
+    /// </summary>
+    public static event Action<IInteractive> LookedAtInteractiveChanged;
 
-    public IInteractive lookedAtInteractive;
+    public IInteractive LookedAtInteractive
+    {
+        get { return lookedAtInteractive; }
+       private set
+        {
+            bool isInteractiveChanged = value != lookedAtInteractive;
+            if (isInteractiveChanged)
+            {
+                lookedAtInteractive = value;
+                LookedAtInteractiveChanged?.Invoke(lookedAtInteractive);   //checks if its null (?.)
+            }
+            
+        }
+    }
 
+    private IInteractive lookedAtInteractive;
+    
     private void FixedUpdate()
+    {
+
+        LookedAtInteractive = GetLookedAtInteractive();
+
+    }
+
+    /// <summary>
+    /// Raycasts forward from the camera to look for IInteractive
+    /// </summary>
+    /// <returns>returning the first IInteractive detected or null if nothing if found</returns>
+    private IInteractive GetLookedAtInteractive()
     {
         Debug.DrawRay(raycastOrigin.position, raycastOrigin.forward * maxRange, Color.red);
         RaycastHit hitInfo;
@@ -29,20 +61,24 @@ public class DetectLookedAtInteractive : MonoBehaviour
 
         IInteractive interactive = null;
 
-        if (objectWasDetected) {
-            //Debug.Log($"Player is looking at {hitInfo.collider.gameObject.name}");
+        LookedAtInteractive = interactive;
+
+        if (objectWasDetected && hitInfo.collider.gameObject.name != "FPSPLAYER")
+        {
+            // Debug.Log($"Player is looking at {hitInfo.collider.gameObject.name}");
 
             interactive = hitInfo.collider.gameObject.GetComponent<IInteractive>();
         }
 
-        if (interactive != null)
-        {
-            lookedAtInteractive = interactive;
-            //interactive.InteractWith();
-        }
-
+        return interactive;
 
     }
+
+
+
+
+
+
 
 
 }
