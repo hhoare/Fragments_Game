@@ -6,12 +6,16 @@ using UnityEngine;
 public class Lamp_HH : InteractiveObject
 {
 
-    public GameObject light;
+    [SerializeField]
+    private GameObject light;
 
-    public bool isOn = false;
-    
-    public AudioClip onSound;
-    public AudioClip offSound;
+    [SerializeField]
+    private bool isOn = false;
+
+    [SerializeField]
+    private AudioClip onSound;
+    [SerializeField]
+    private AudioClip offSound;
 
 
     /// <summary>

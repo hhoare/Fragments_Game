@@ -14,8 +14,10 @@ public class Drawer : InteractiveObject
     private int shouldCloseAnimParamater = Animator.StringToHash("shouldClose");
 
 
-    public AudioClip openSound;
-    public AudioClip closeSound;
+    [SerializeField]
+    private AudioClip openSound;
+    [SerializeField]
+    private AudioClip closeSound;
 
 
     /// <summary>
