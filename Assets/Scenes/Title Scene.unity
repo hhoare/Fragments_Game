@@ -10187,6 +10187,7 @@ GameObject:
   - component: {fileID: 631565333}
   - component: {fileID: 631565332}
   - component: {fileID: 631565331}
+  - component: {fileID: 631565334}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -10226,10 +10227,10 @@ MonoBehaviour:
   g_showExtra: 1
   g_showBypass: 0
   bleedOn: 1
-  crtMode: 0
+  crtMode: 1
   crtLinesMode: 1
   screenLinesNum: 240
-  bleedAmount: 1.94
+  bleedAmount: 2.52
   bleedDebugOn: 0
   bleedCurveY:
     serializedVersion: 2
@@ -10315,34 +10316,34 @@ MonoBehaviour:
   cutoffFadeX: 0
   cutoffFadeY: 0
   vignetteOn: 1
-  vignetteAmount: 0.52
-  vignetteSpeed: 0
+  vignetteAmount: 0.17
+  vignetteSpeed: 2.26
   noiseLinesMode: 1
-  noiseLinesNum: 240
+  noiseLinesNum: 480
   noiseQuantizeX: 0
   filmgrainOn: 1
   filmGrainAmount: 0.0261
   signalNoiseOn: 1
-  signalNoiseAmount: 0.289
+  signalNoiseAmount: 0.199
   signalNoisePower: 0.855
-  tapeNoiseOn: 1
-  tapeNoiseTH: 0.536
-  tapeNoiseAmount: 0.357
-  tapeNoiseSpeed: 0.446
+  tapeNoiseOn: 0
+  tapeNoiseTH: 1.5
+  tapeNoiseAmount: 0
+  tapeNoiseSpeed: 0.234
   lineNoiseOn: 1
   lineNoiseAmount: 1
   lineNoiseSpeed: 5
   scanLinesOn: 1
-  scanLineWidth: 12.94
+  scanLineWidth: 9.76
   linesFloatOn: 1
-  linesFloatSpeed: -1.38
+  linesFloatSpeed: -0.55
   stretchOn: 1
   twitchHOn: 0
-  twitchHFreq: 0.35
+  twitchHFreq: 0
   twitchVOn: 0
-  twitchVFreq: 0.08
+  twitchVFreq: 0
   jitterHOn: 1
-  jitterHAmount: 0.16
+  jitterHAmount: 0.42
   jitterVOn: 1
   jitterVAmount: 12.22
   jitterVSpeed: 0.58
@@ -10421,6 +10422,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: -104.37601, z: 0}
+--- !u!114 &631565334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631565330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9e77671a9d83004e9fe9bcce9a723a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorPrecision: 16
+  usePalette: 0
+  palette: {fileID: 0}
 --- !u!1 &664958075
 GameObject:
   m_ObjectHideFlags: 0
@@ -11110,7 +11126,7 @@ Material:
   m_Name: Hidden/postVHSPro_First
   m_Shader: {fileID: 4800000, guid: e5b137a48bf2c4c668927fd89b6ccbcd, type: 3}
   m_ShaderKeywords: VHS_FILMGRAIN_ON VHS_JITTER_H_ON VHS_JITTER_V_ON VHS_LINENOISE_ON
-    VHS_LINESFLOAT_ON VHS_SCANLINES_ON VHS_STRETCH_ON VHS_TAPENOISE_ON VHS_YIQNOISE_ON
+    VHS_LINESFLOAT_ON VHS_SCANLINES_ON VHS_STRETCH_ON VHS_YIQNOISE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -11595,7 +11611,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Hidden/postVHSPro_Second
   m_Shader: {fileID: 4800000, guid: e2075d3cd3deb45c78fdc81aab250ef7, type: 3}
-  m_ShaderKeywords: VHS_BLEED_ON VHS_OLD_THREE_PHASE VHS_SIGNAL_TWEAK_ON VHS_VIGNETTE_ON
+  m_ShaderKeywords: VHS_BLEED_ON VHS_SIGNAL_TWEAK_ON VHS_THREE_PHASE VHS_VIGNETTE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -12785,7 +12801,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Hidden/postVHSPro_Tape
   m_Shader: {fileID: 4800000, guid: caea6b3daf52a4416949b7b9c0146d77, type: 3}
-  m_ShaderKeywords: VHS_FILMGRAIN_ON VHS_LINENOISE_ON VHS_TAPENOISE_ON
+  m_ShaderKeywords: VHS_FILMGRAIN_ON VHS_LINENOISE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
