@@ -13,6 +13,8 @@ public class Drawer : InteractiveObject
     private int shouldOpenAnimParamater = Animator.StringToHash("shouldOpen");
     private int shouldCloseAnimParamater = Animator.StringToHash("shouldClose");
 
+    [SerializeField]
+    private string name;
 
     [SerializeField]
     private AudioClip openSound;
@@ -26,18 +28,18 @@ public class Drawer : InteractiveObject
     /// 
     public Drawer()
     {
-        displayText = "Open " + nameof(Drawer);
+        displayText = "Open " + name;
     }
 
     private void Update()
     {
         if (!isOpen)
         {
-            displayText = "Open " + nameof(Drawer);
+            displayText = "Open " + name;
         }
         if (isOpen)
         {
-            displayText = "Close " + nameof(Drawer);
+            displayText = "Close " + name;
         }
     }
 

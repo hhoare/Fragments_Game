@@ -2114,6 +2114,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wardrobe_a
       objectReference: {fileID: 0}
+    - target: {fileID: 1390009215516628, guid: b659a5655ca6d0e46ac77a39b265b79c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4506911324374788, guid: b659a5655ca6d0e46ac77a39b265b79c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.4
@@ -2184,6 +2188,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4283529132158186, guid: b659a5655ca6d0e46ac77a39b265b79c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1745258511517304, guid: b659a5655ca6d0e46ac77a39b265b79c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1841152912804190, guid: b659a5655ca6d0e46ac77a39b265b79c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1055694036200612, guid: b659a5655ca6d0e46ac77a39b265b79c, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2315,7 +2331,7 @@ Animator:
   m_GameObject: {fileID: 1556210500}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2dfc71950ef3531429b790f0f4dbe886, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
