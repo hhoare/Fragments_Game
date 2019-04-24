@@ -7,6 +7,8 @@ public class UIButtonController : MonoBehaviour
     [SerializeField]
     GameObject blueScreen;
     [SerializeField]
+    GameObject blackScreen;
+    [SerializeField]
     GameObject rain;
 
     [SerializeField]
@@ -15,8 +17,16 @@ public class UIButtonController : MonoBehaviour
     GameObject creditsPage;
 
 
+    Animator blackScreenAnim;
+
+    public void Awake()
+    {
+        blackScreenAnim = blackScreen.GetComponent<Animator>();
+    }
+
     public void PlayGame()
     {
+
         blueScreen.SetActive(false);
         rain.SetActive(true);
 
