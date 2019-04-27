@@ -10,7 +10,7 @@ public class InteractiveObject : MonoBehaviour, IInteractive
     [SerializeField]
     protected string displayText = nameof(InteractiveObject);
 
-    public string DisplayText => displayText;
+    public virtual string DisplayText => displayText;
 
     protected AudioSource audioSource;
 
