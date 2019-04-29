@@ -11,6 +11,8 @@ public class InventoryObject : InteractiveObject
     //TODO: Add long description field
     //TODO: Add icon field
 
+    public string ObjectName => objectName;
+
     private new Renderer renderer;
     private new Collider collider;
 
