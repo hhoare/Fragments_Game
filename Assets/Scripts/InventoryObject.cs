@@ -8,6 +8,15 @@ public class InventoryObject : InteractiveObject
     [SerializeField]
     private string objectName = nameof(InventoryObject);
 
+    [Tooltip("Text to display in inventory menu for object")]
+    [TextArea(3, 8)]
+    [SerializeField]
+    private string description;
+
+    [Tooltip("Icon to display in inventory menu for object")]
+    [SerializeField]
+    private Sprite icon;
+
     //TODO: Add long description field
     //TODO: Add icon field
 
