@@ -17,29 +17,40 @@ public class UIButtonController : MonoBehaviour
     GameObject creditsPage;
 
 
-    Animator blackScreenAnim;
+    [SerializeField]
+    SceneChangeTimer sceneChanger;
+
+    protected AudioSource audioSource;
+
+
 
     public void Awake()
     {
-        blackScreenAnim = blackScreen.GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+
+        sceneChanger.enabled = false;
     }
 
     public void PlayGame()
     {
-
+        playButtonSound();
+        blackScreen.SetActive(true);
         blueScreen.SetActive(false);
         rain.SetActive(true);
+        sceneChanger.enabled = true;
 
     }
 
     public void Credits()
     {
+        playButtonSound();
         mainPage.SetActive(false);
         creditsPage.SetActive(true);
     }
 
     public void Return()
     {
+        playButtonSound();
         creditsPage.SetActive(false);
         mainPage.SetActive(true);
     }
@@ -48,4 +59,12 @@ public class UIButtonController : MonoBehaviour
     {
         Application.Quit();
     }
+
+
+    public void playButtonSound()
+    {
+        audioSource.Play();
+    }
+
+
 }
