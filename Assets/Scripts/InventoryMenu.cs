@@ -1,12 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class InventoryMenu : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject inventoryMenuItemTogglePrefab;
+
+    [Tooltip("Content of the scrollview for the list of inventory items.")]
+    [SerializeField]
+    private Transform inventoryListContentArea;
+
+    [Tooltip("Place in UI for displaying the name of the selected inventory Item")]
+    [SerializeField]
+    private Text itemLabelText;
+
+    [Tooltip("Place in UI for displaying the info of the selected inventory Item")]
+    [SerializeField]
+    private Text descriptionAreaText;
+
     private static InventoryMenu instance;
     private CanvasGroup canvasGroup;
-
     private AudioSource audioSource;
 
     public static InventoryMenu Instance
@@ -27,6 +43,18 @@ public class InventoryMenu : MonoBehaviour
     {
         HideMenu();
     }
+    /// <summary>
+    /// instantiates a new InventoryMenuItemToggle prefab and adds it to the menu.
+    /// </summary>
+    /// <param name="inventoryObjectToAdd"></param>
+    public void AddItemToMenu(InventoryObject inventoryObjectToAdd)
+    {
+       GameObject clone = Instantiate(inventoryMenuItemTogglePrefab, inventoryListContentArea);
+        InventoryMenuItemToggle toggle = clone.GetComponent<InventoryMenuItemToggle>();
+        toggle.AssociatedInventoryObject = inventoryObjectToAdd;
+
+    }
+
 
     private void ShowMenu()
     {
@@ -40,6 +68,24 @@ public class InventoryMenu : MonoBehaviour
         canvasGroup.alpha = 0;
         canvasGroup.interactable = false;
         audioSource.Play();
+    }
+    /// <summary>
+    /// this is the event handler for InventoryMenuItemSelected
+    /// </summary>
+    private void OnInventoryMenuItemSelected(InventoryObject inventoryObjectThatWasSelected)
+    {
+        itemLabelText.text = inventoryObjectThatWasSelected.ObjectName;
+        descriptionAreaText.text = inventoryObjectThatWasSelected.Description;
+    }
+
+    private void OnEnable()
+    {
+        InventoryMenuItemToggle.InventoryMenuItemSelected += OnInventoryMenuItemSelected;
+    }
+
+    private void OnDisable()
+    {
+        InventoryMenuItemToggle.InventoryMenuItemSelected -= OnInventoryMenuItemSelected;
     }
 
     private void Update()

@@ -84,6 +84,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3659494037961237314}
   - component: {fileID: 3659494037961237313}
+  - component: {fileID: 8645427837378513130}
   m_Layer: 0
   m_Name: Inventory Item Toggle
   m_TagString: Untagged
@@ -151,13 +152,37 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3659494038344992531}
   toggleTransition: 1
   graphic: {fileID: 3659494038402274616}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 1543638295, guid: ed8ae75ed562f6846bb980cc91f1e7cf, type: 3}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8645427837378513130}
+        m_MethodName: InventoryMenuItemWasToggled
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
+--- !u!114 &8645427837378513130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3659494037961237315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcac497b20a01cf4bba67ac378f72c8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iconImage: {fileID: 1315483392}
 --- !u!1 &3659494038344992533
 GameObject:
   m_ObjectHideFlags: 0
