@@ -37,6 +37,7 @@ public class TriggerVolumeEnter : MonoBehaviour
     IEnumerator ActivateAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
+        player.SetActive(false);
         objectToEnable.SetActive(true);
         audioSource.Play();
 
