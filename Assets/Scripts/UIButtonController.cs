@@ -60,10 +60,16 @@ public class UIButtonController : MonoBehaviour
         Application.Quit();
     }
 
+    public void Assets() {
+        playButtonSound();
+        Application.OpenURL("https://docs.google.com/document/d/17cH8SetIxL2JD8lVcnuzv-C29i_M94zzNdPNWHiAwIg/edit?usp=sharing");
+
+    }
 
     public void playButtonSound()
     {
         audioSource.Play();
+
     }
 
 

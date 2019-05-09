@@ -17,6 +17,13 @@ public class TriggerVolumeEnter : MonoBehaviour
         this.GetComponent<Collider>();
     }
 
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape) && objectToEnable.activeSelf)
+        {
+            Application.Quit();
+        }    
+    }
 
     protected AudioSource audioSource;
 
@@ -28,7 +35,7 @@ public class TriggerVolumeEnter : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other == player.GetComponent<Collider>()) {
-            StartCoroutine(ActivateAfterDelay(7));
+            StartCoroutine(ActivateAfterDelay(5));
 
         }
     }
